@@ -41,4 +41,15 @@ useHead({
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .layouts-default {
+    &__header {
+        justify-content: center;
+    }
+    &__main {
+        width: 100%;
+    }
+  }
+}
 </style>

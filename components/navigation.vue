@@ -50,4 +50,10 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
+}
 </style>

@@ -49,4 +49,10 @@ const linkToYouTube = () => {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+  .link-official {
+    display: none;
+  }
+}
 </style>

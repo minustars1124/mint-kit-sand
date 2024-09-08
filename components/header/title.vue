@@ -26,4 +26,14 @@
         transition: .2s;
     }
 }
+
+@media screen and (max-width: 480px) {
+  .header-title {
+    &__link {
+        &--image {
+            height: 36px;
+        }
+    }
+  }
+}
 </style>
