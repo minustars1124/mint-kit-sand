@@ -1,6 +1,6 @@
 # mint-kit-sand
 
-新宿発渋谷系アイドルポップロックシューゲイザーバンド Mint kit sand の公式サイト(https://mintkitsand.com)を管理するレポジトリです。
+新宿発渋谷系アイドルポップロックシューゲイザーバンド Mint kit sand の公式サイト( https://mintkitsand.com )を管理するレポジトリです。
 
 ## 環境
 * node.js
