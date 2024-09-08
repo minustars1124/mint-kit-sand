@@ -1,6 +1,13 @@
-# Nuxt 3 Minimal Starter
+# mint-kit-sand
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+新宿発渋谷系アイドルポップロックシューゲイザーバンド Mint kit sand の公式サイト(https://mintkitsand.com)を管理するレポジトリです。
+
+## 環境
+* node.js
+* VSCode
+
+## 参考
+* https://reffect.co.jp/vue/nuxt3
 
 ## Setup
 

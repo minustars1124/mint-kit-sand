@@ -1,0 +1,100 @@
+{
+    "items": [
+        {
+          "id": "magic",
+          "release": "4th single",
+          "title": "はじまりの魔法",
+          "tracks": ["はじまりの魔法"],
+          "price": 500,
+          "staff": {
+            "illust": {
+              "name": "たかぎぼく",
+              "link": "https://lit.link/takakiboku"
+            },
+            "design": {
+              "name": "須藤ストラ"
+            }
+          },
+          "detail": "M3 2024春(2024.4.28)より、各種イベントにて頒布開始",
+          "shops": [
+            {
+                "name": "BOOTH",
+                "link": "https://mintkitsand.booth.pm/items/5669194"
+            }
+          ]
+        },
+        {
+          "id": "idwcu",
+          "release": "3rd single",
+          "title": "会いたくない",
+          "tracks": ["会いたくない", "星になる"],
+          "price": 500,
+          "staff": {
+            "illust": {
+              "name": "ひらり",
+              "link": "https://x.com/hirahirari31"
+            },
+            "design": {
+              "name": "須藤ストラ"
+            }
+          },
+          "detail": "M3 2021春(2021.4.25)より、各種イベントにて頒布開始",
+          "shops": [
+            {
+                "name": "BOOTH",
+                "link": "https://mintkitsand.booth.pm/items/2914516"
+            }
+          ]
+        },
+        {
+          "id": "labyrinth",
+          "release": "2nd single",
+          "title": "気まぐれなラビリンス",
+          "tracks": ["気まぐれなラビリンス", "恋に恋する女の子", "透明スカート"],
+          "price": 500,
+          "staff": {
+            "illust": {
+              "name": "ASCAN",
+              "link": "https://x.com/tm1330"
+            },
+            "photo": {
+              "name": "市倉ミズキ",
+              "link": "https://x.com/aremacy"
+            },
+            "design": {
+              "name": "須藤ストラ"
+            }
+          },
+          "detail": "M3 2018春(2018.4.29)より、各種イベントにて頒布開始",
+          "shops": [
+            {
+                "name": "BOOTH",
+                "link": "https://mintkitsand.booth.pm/items/5687354"
+            }
+          ]
+        },
+        {
+          "id": "special_time",
+          "release": "1st single",
+          "title": "Special time",
+          "tracks": ["Special time", "砂漠の花に水を遣る", "全部、夏のせいにして良いですか？"],
+          "price": 500,
+          "staff": {
+            "photo": {
+              "name": "市倉ミズキ",
+              "link": "https://x.com/aremacy"
+            },
+            "design": {
+              "name": "八河のなめ"
+            }
+          },
+          "detail": "M3 2018春(2018.4.29)より、各種イベントにて頒布開始",
+          "shops": [
+            {
+                "name": "BOOTH",
+                "link": "https://mintkitsand.booth.pm/items/5687354"
+            }
+          ]
+        }
+      ]
+}
