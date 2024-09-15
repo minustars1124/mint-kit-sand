@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DiscList from '@/assets/json/disc.json';
+import DiscList from '@/assets/json/discs.json';
 const disc = ref<Disc>();
 const src = ref<string>();
 const alt = ref<string>();
