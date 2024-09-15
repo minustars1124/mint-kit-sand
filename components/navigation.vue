@@ -13,7 +13,7 @@ var accordion = ref<NodeListOf<HTMLInputElement>>();
 onMounted(() => {
   hamburger.value = <HTMLInputElement>document.getElementById("js-hamburger");
   focusTrap.value = <HTMLInputElement>document.getElementById("js-focus-trap");
-  menu.value = <HTMLInputElement>document.querySelector(".navigation");
+  menu.value = <HTMLInputElement>document.querySelector(".navigation__menu");
   accordionTrigger.value = document.querySelectorAll<HTMLInputElement>(".js-sp-accordion-trigger");
   accordion.value = document.querySelectorAll<HTMLInputElement>(".js-sp-accordion");
 
@@ -110,111 +110,115 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <button id="js-hamburger"
+  <div class="navigation">
+    <button id="js-hamburger"
           type="button"
-          class="hamburger"
+          class="navigation__hamburger"
           aria-controls="navigation"
           aria-expanded="false"
           aria-label="メニューを開く">
-    <span class="hamburger__line"></span>
-    <span class="hamburger__text"></span>
-  </button>
-  <nav class="navigation">
-    <ul class="navigation__ul">
-      <li class="navigation__li">
-        <NuxtLink to="/about" event="" @click.native="closeMenu" class="navigation__link">About</NuxtLink>
-      </li>
-      <li class="navigation__li">
-        <NuxtLink to="/disc" event="" @click.native="closeMenu" class="navigation__link">Discography</NuxtLink>
-      </li>
-      <li class="navigation__li">
-        <NuxtLink to="/music" event="" @click.native="closeMenu" class="navigation__link">Music</NuxtLink>
-      </li>
-      <li class="navigation__li">
-        <NuxtLink to="/events" event="" @click.native="closeMenu" class="navigation__link">Events</NuxtLink>
-      </li>
-      <li class="navigation__li">
-        <NuxtLink to="/contact" event="" @click.native="closeMenu" class="navigation__link">Contact</NuxtLink>
-      </li>
-    </ul>
-    <LinkOfficial/>
-  </nav>
+      <span class="navigation__hamburger--line"></span>
+      <span class="navigation__hamburger--text"></span>
+    </button>
+    <nav class="navigation__menu">
+      <ul class="navigation__ul">
+        <li class="navigation__li">
+          <NuxtLink to="/about" event="" @click.native="closeMenu" class="navigation__link">About</NuxtLink>
+        </li>
+        <li class="navigation__li">
+          <NuxtLink to="/disc" event="" @click.native="closeMenu" class="navigation__link">Discography</NuxtLink>
+        </li>
+        <li class="navigation__li">
+          <NuxtLink to="/music" event="" @click.native="closeMenu" class="navigation__link">Music</NuxtLink>
+        </li>
+        <li class="navigation__li">
+          <NuxtLink to="/events" event="" @click.native="closeMenu" class="navigation__link">Events</NuxtLink>
+        </li>
+        <li class="navigation__li">
+          <NuxtLink to="/contact" event="" @click.native="closeMenu" class="navigation__link">Contact</NuxtLink>
+        </li>
+      </ul>
+      <LinkOfficial/>
+    </nav>
+  </div>
 </template>
 
 <style scoped lang="scss">
-.hamburger {
-  display: none;
-  height: 48px;
-  margin-left: auto;
-  position: relative;
-  z-index: 10;
-  width: 48px;
-  border: none;
-  background-color: transparent;
-  &__line {
-    display: block;
-    height: 1px;
-    position: absolute;
-    top: 19px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    background-color: var(--white);
-    transition: 0.4s;
-    &:before, &:after {
-      content: "";
-      display: block;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      background-color: var(--white);
-      transition: inherit;
-    }
-    &:before {
-      top: -6px;
-    }
-    &:after {
-      top: 6px;
-    }
-  }
-  &__text {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    &::before {
-      content: "メニュー";
-      text-align: center;
-      color: var(--white);
-      font-size: 0.6em;
-    }
-  }
-  &.active {
-    .hamburger {
-      &__line {
-        background-color: transparent;
-        &::before {
-          top: 0;
-          transform: rotate(45deg);
-        }
-        &::after {
-          top: 0;
-          transform: rotate(-45deg);
-        }
-      }
-      &__text {
-        &::before {
-          content: '閉じる';
-        }
-      }
-    }
-  }
-}
 .navigation {
-  display: flex;
-  justify-content: center;
-  gap: 64px;
+  &__hamburger {
+    display: none;
+    height: 48px;
+    margin-left: auto;
+    position: relative;
+    z-index: 10;
+    width: 48px;
+    border: none;
+    background-color: transparent;
+    &--line {
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 19px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      background-color: var(--white);
+      transition: 0.4s;
+      &:before, &:after {
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-color: var(--white);
+        transition: inherit;
+      }
+      &:before {
+        top: -6px;
+      }
+      &:after {
+        top: 6px;
+      }
+    }
+    &--text {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      &::before {
+        content: "メニュー";
+        text-align: center;
+        color: var(--white);
+        font-size: 0.6em;
+      }
+    }
+    &.active {
+      .navigation__hamburger {
+        &--line {
+          background-color: transparent;
+          &::before {
+            top: 0;
+            transform: rotate(45deg);
+          }
+          &::after {
+            top: 0;
+            transform: rotate(-45deg);
+          }
+        }
+        &--text {
+          &::before {
+            content: '閉じる';
+          }
+        }
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
   &__ul {
     display: flex;
     gap: 16px;
@@ -243,30 +247,32 @@ const closeMenu = () => {
 }
 
 @media screen and (max-width: 480px) {
-  .hamburger {
-    display: block;
-  }
   .navigation {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    z-index: 9;
-    height: 100vh;
-    width: 300px;
-    visibility: hidden;
-    padding-top: 60px;
-    background-color: var(--primary-color);
-    transition: 0.4s;
+    &__hamburger {
+      display: block;
+    }
+    &__menu {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      z-index: 1000;
+      height: 100svh;
+      width: 300px;
+      visibility: visible;
+      padding-top: 60px;
+      background-color: var(--primary-color);
+      transition: 0.4s;
+      &.active {
+        left: 0;
+        visibility: visible;
+      }
+    }
     &__ul {
       flex-direction: column;
-    }
-    &.active {
-      left: 0;
-      visibility: visible;
     }
   }
 }
