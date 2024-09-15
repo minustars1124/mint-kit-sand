@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import NewsList from '@/assets/json/news.json';
 useHead({
   meta: [
     {
@@ -15,6 +16,11 @@ useHead({
     }
   ]
 });
+interface News {
+  date: string,
+  text: string,
+}
+const newsList = NewsList.items;
 </script>
 
 <template>
@@ -36,11 +42,8 @@ useHead({
     <div class="index__news">
       <div class="index__news--title">NEWS</div>
       <ul class="index__news--line-up">
-        <li class="index__news--list">
-          2024-06-26 自主企画ライブ「Mint flavor meeting」開催決定！
-        </li>
-        <li class="index__news--list">
-          2024-06-19 「Guitar Pop Restaulant Vol.51」に出演決定！
+        <li v-for="news in newsList" class="index__news--list">
+          {{ news.date }} {{ news.text }}
         </li>
       </ul>
     </div>
