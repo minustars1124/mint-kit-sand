@@ -11,10 +11,9 @@ useHead({
     <header class="layouts-default__header">
       <HeaderTitle/>
       <Navigation/>
-      <LinkOfficial/>
     </header>
     <main class="layouts-default__main">
-      <slot/>
+      <slot></slot>
     </main>
     <footer class="layouts-default__footer">
       (c)2018-2024 Mint kit sand all rights reserved.
