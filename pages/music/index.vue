@@ -5,16 +5,16 @@ useHead({
 </script>
 
 <template>
-    <div class="music-index">
-        <section class="music-index__introduction">
-            <h1 class="music-index__introduction--title">Music</h1>
-        </section>
-        <section class="music-index__tracks">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/30ISoblAMXMD7ysWNDhnwP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/16b309gS3CRT4oMWch5CRo?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1dgm1oW1NnF9VzhjLdK4fF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </section>
-    </div>
+  <div class="music-index">
+    <section class="music-index__introduction">
+      <h1 class="music-index__introduction--title">Music</h1>
+    </section>
+    <section class="music-index__tracks">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/30ISoblAMXMD7ysWNDhnwP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/16b309gS3CRT4oMWch5CRo?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1dgm1oW1NnF9VzhjLdK4fF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+  </div>
 </template>
 
 <style scoped lang="scss">

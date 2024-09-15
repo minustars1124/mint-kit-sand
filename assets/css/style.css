@@ -1,11 +1,11 @@
 html {
-    font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 :root {
-    --primary-color: #17B1A5;
-    --shade-color: #0D6A63;
-    --tint-color: #D0EFED;
-    --text-color: #0D1F22;
-    --white: #FFF;
+  --primary-color: #17B1A5;
+  --shade-color: #0D6A63;
+  --tint-color: #D0EFED;
+  --text-color: #0D1F22;
+  --white: #FFF;
 }

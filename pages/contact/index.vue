@@ -5,19 +5,19 @@ useHead({
 </script>
 
 <template>
-    <div class="contact-index">
-        <section class="contact-index__introduction">
-            <h1 class="contact-index__introduction--title">Contact</h1>
-        </section>
-        <section class="contact-index__contact">
-            ご連絡は<a href="mailto:mintkitsand@gmail.com" class="contact-index__contact--link">メール</a>もしくはXにてお願いいたします。
-        </section>
-        <section class="contact-index__twitter">
-            <XWindow>
-                <a class="twitter-timeline" href="https://twitter.com/Mintkitsand?ref_src=twsrc%5Etfw">Tweets by Mintkitsand</a>
-            </XWindow>
-        </section>
-    </div>
+  <div class="contact-index">
+    <section class="contact-index__introduction">
+      <h1 class="contact-index__introduction--title">Contact</h1>
+    </section>
+    <section class="contact-index__contact">
+      ご連絡は<a href="mailto:mintkitsand@gmail.com" class="contact-index__contact--link">メール</a>もしくはXにてお願いいたします。
+    </section>
+    <section class="contact-index__twitter">
+      <XWindow>
+        <a class="twitter-timeline" href="https://twitter.com/Mintkitsand?ref_src=twsrc%5Etfw">Tweets by Mintkitsand</a>
+      </XWindow>
+    </section>
+  </div>
 </template>
 
 <style scoped lang="scss">

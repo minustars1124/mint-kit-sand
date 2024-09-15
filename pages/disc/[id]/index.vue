@@ -37,13 +37,13 @@ const discList: Array<Disc> = DiscList.items;
 const router = useRouter();
 
 onMounted(() => {
-    const idList = discList.map(disc => disc.id);
-    if (!idList.some(id => route.params.id)) {
-        navigateTo('/disc');
-    }
-    disc.value = discList.find(disc => route.params.id === disc.id);
-    src.value = new URL("../../../assets/images/disc/" + disc.value?.id + ".webp", import.meta.url).href
-    alt.value = disc.value?.title + "ジャケット";
+  const idList = discList.map(disc => disc.id);
+  if (!idList.some(id => route.params.id)) {
+    navigateTo('/disc');
+  }
+  disc.value = discList.find(disc => route.params.id === disc.id);
+  src.value = new URL("../../../assets/images/disc/" + disc.value?.id + ".webp", import.meta.url).href
+  alt.value = disc.value?.title + "ジャケット";
 });
 </script>
 
