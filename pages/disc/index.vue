@@ -65,4 +65,18 @@ const discList: Array<Disc> = DiscList.items;
     gap: 32px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .disc-index {
+    &__introduction {
+      margin: 0 16px;
+      &--title {
+        font-size: 1.5em;
+      }
+      &--name {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
 </style>

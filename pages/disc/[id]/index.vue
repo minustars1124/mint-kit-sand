@@ -48,64 +48,64 @@ onMounted(() => {
 </script>
 
 <template>
-    <div v-if="disc" class="disc-id-index">
-        <section class="disc-id-index__introduction">
-            <h1 class="disc-id-index__introduction--title">Discography</h1>
-        </section>
-        <h2>{{ disc.release }} {{ disc.title }}</h2>
-        <div class="disc-id-index__detail">
-        <div class="disc-id-index__detail__image">
-            <picture>
-                <img loading="lazy"
-                     :srcset="src"
-                     :alt="alt"
-                     type="img/webp"/>
-            </picture>
+  <div v-if="disc" class="disc-id-index">
+    <section class="disc-id-index__introduction">
+      <h1 class="disc-id-index__introduction--title">Discography</h1>
+    </section>
+    <h2>{{ disc.release }} {{ disc.title }}</h2>
+    <div class="disc-id-index__detail">
+      <div class="disc-id-index__detail__image">
+        <picture>
+          <img loading="lazy"
+               :srcset="src"
+               :alt="alt"
+               type="img/webp"/>
+        </picture>
+      </div>
+      <div class="disc-id-index__detail__info">
+        <div class="disc-id-index__detail__info--detail">{{ disc.detail }}</div>
+        <div class="disc-id-index__detail__info--tracks">
+          収録曲
+          <ol class="disc-id-index__detail__track">
+            <template v-for="track in disc.tracks">
+              <li>{{ track }}</li>
+            </template>
+          </ol>
         </div>
-        <div class="disc-id-index__detail__info">
-            <div class="disc-id-index__detail__info--detail">{{ disc.detail }}</div>
-            <div class="disc-id-index__detail__info--tracks">
-                収録曲
-                <ol class="disc-id-index__detail__track">
-                    <template v-for="track in disc.tracks">
-                        <li>{{ track }}</li>
-                    </template>
-                </ol>
+        <div class="disc-id-index__detail__info--price">頒布価格:¥{{ disc.price }}</div>
+        <div class="disc-id-index__detail__info--staff">
+          <div v-if="disc.staff.illust" class="disc-id-index__detail__person">
+            イラスト:{{ disc.staff.illust.name }}
+            <button v-if="disc.staff.illust.link"
+                    @click="click(disc.staff.illust.link)"
+                    class="disc-id-index__detail__person--button">
+              リンク
+            </button>
+          </div>
+          <div v-if="disc.staff.photo" class="disc-id-index__detail__person">
+            写真:{{ disc.staff.photo.name }}
+            <button v-if="disc.staff.photo.link"
+                    @click="click(disc.staff.photo.link)"
+                    class="disc-id-index__detail__person--button">
+              リンク
+            </button>
+          </div>
+          <div class="disc-id-index__detail__person">
+            ジャケット・デザイン:{{ disc.staff.design.name }}
+          </div>
+          <div class="disc-id-index__shopping">
+            通販:
+            <div v-for="shop in disc.shops">
+              <button @click="click(shop.link)"
+                      class="disc-id-index__detail__person--button">
+                {{ shop.name }}
+              </button>
             </div>
-            <div class="disc-id-index__detail__info--price">頒布価格:¥{{ disc.price }}</div>
-            <div class="disc-id-index__detail__info--staff">
-                <div v-if="disc.staff.illust" class="disc-id-index__detail__person">
-                    イラスト:{{ disc.staff.illust.name }}
-                    <button v-if="disc.staff.illust.link"
-                            @click="click(disc.staff.illust.link)"
-                            class="disc-id-index__detail__person--button">
-                        リンク
-                    </button>
-                </div>
-                <div v-if="disc.staff.photo" class="disc-id-index__detail__person">
-                    写真:{{ disc.staff.photo.name }}
-                    <button v-if="disc.staff.photo.link"
-                            @click="click(disc.staff.photo.link)"
-                            class="disc-id-index__detail__person--button">
-                        リンク
-                    </button>
-                </div>
-                <div class="disc-id-index__detail__person">
-                    ジャケット・デザイン:{{ disc.staff.design.name }}
-                </div>
-                <div class="disc-id-index__shopping">
-                  通販:
-                  <div v-for="shop in disc.shops">
-                    <button @click="click(shop.link)"
-                            class="disc-id-index__detail__person--button">
-                        {{ shop.name }}
-                    </button>
-                  </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -188,6 +188,25 @@ onMounted(() => {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .disc-id-index {
+    &__introduction {
+      margin: 0 16px;
+      &--title {
+        font-size: 1.5em;
+      }
+    }
+    &__detail {
+      grid-template-columns: auto;
+      width: 90svw;
+      gap: 16px;
+      &__info {
+        grid-column: 1;
+      }
+    }
   }
 }
 </style>

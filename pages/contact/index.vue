@@ -54,4 +54,19 @@ useHead({
     scrollbar-width: thin;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .contact-index {
+    &__introduction {
+      margin: 0 16px;
+      &--title {
+        font-size: 1.5em;
+      }
+    }
+    &__twitter {
+      grid-template-columns: auto;
+      width: 90svw;
+    }
+  }
+}
 </style>

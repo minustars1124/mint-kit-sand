@@ -35,7 +35,7 @@ useHead({
     </div>
     <div class="index__news">
       <div class="index__news--title">NEWS</div>
-      <ul>
+      <ul class="index__news--line-up">
         <li class="index__news--list">
           2024-06-26 自主企画ライブ「Mint flavor meeting」開催決定！
         </li>
@@ -44,7 +44,7 @@ useHead({
         </li>
       </ul>
     </div>
-    <div>
+    <div class="index__top-tracks">
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5kyOw2diEub2x4dKLvjALa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
@@ -72,12 +72,38 @@ useHead({
   }
   &__news {
     &--title {
+      padding: 0 16px;
       color: var(--primary-color);
       font-size: 1.2em;
       font-weight: bold;
     }
+    &--line-up {
+      margin: 16px;
+      padding: 0;
+    }
     &--list {
       list-style-type: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .index {
+    &__picture {
+      &--band {
+        display: none;
+      }
+      &--logo {
+        display: none;
+      }
+    }
+    &__news {
+      &--title {
+        text-align: center;
+      }
+    }
+    &__top-tracks {
+      margin: 0 5svw;
     }
   }
 }

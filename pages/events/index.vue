@@ -127,4 +127,15 @@ const eventList: Array<Event> = [
     gap: 32px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .events-index {
+    &__introduction {
+      margin: 0 16px;
+      &--title {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
 </style>

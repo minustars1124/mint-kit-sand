@@ -175,4 +175,15 @@ const sameDayPrice = computed(() => {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+  .events-information {
+    gap: 16px;
+    width: 90svw;
+    grid-template-columns: auto;
+    &__info {
+        grid-column: 1;
+    }
+  }
+}
 </style>

@@ -97,4 +97,18 @@ useHead({
     gap: 4px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .about-index {
+    &__introduction {
+      margin: 0 16px;
+      &--title {
+        font-size: 1.5em;
+      }
+      &--name {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
 </style>

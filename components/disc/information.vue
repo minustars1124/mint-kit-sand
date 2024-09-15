@@ -150,4 +150,22 @@ const link = () => {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+  .disc-information {
+    width: 90svw;
+    gap: 16px;
+    &__info {
+      &--tracks {
+        display: none;
+      }
+      &--price {
+        display: none;
+      }
+      &--staff {
+        display: none;
+      }
+    }
+  }
+}
 </style>

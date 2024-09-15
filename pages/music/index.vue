@@ -61,4 +61,19 @@ useHead({
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+  .music-index {
+    &__introduction {
+      margin: 0 16px;
+      &--title {
+        font-size: 1.5em;
+      }
+    }
+    &__tracks {
+      width: 90svw;
+      gap: 16px;
+    }
+  }
+}
 </style>
