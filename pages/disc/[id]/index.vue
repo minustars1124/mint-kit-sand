@@ -42,7 +42,7 @@ onMounted(() => {
     navigateTo('/disc');
   }
   disc.value = discList.find(disc => route.params.id === disc.id);
-  src.value = new URL("../../../assets/images/disc/" + disc.value?.id + ".webp", import.meta.url).href
+  src.value = "@/assets/images/disc/" + disc.value?.id + ".webp"
   alt.value = disc.value?.title + "ジャケット";
 });
 </script>

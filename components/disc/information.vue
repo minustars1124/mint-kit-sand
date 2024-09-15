@@ -26,7 +26,7 @@ const props = defineProps({
   }
 })
 const src = computed<string>(() => {
-  return new URL("../../assets/images/disc/" + props.id + ".webp", import.meta.url).href
+  return "@/assets/images/disc/" + props.id + ".webp"
 })
 const alt = computed<string>(() => {
   return props.title + "ジャケット";
