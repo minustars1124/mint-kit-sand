@@ -131,7 +131,8 @@ onMounted(() => {
     justify-content: start;
     align-items: center;
     grid-template-columns: 50% auto;
-    width: 50vw;
+    width: 70svw;
+    min-width: 460px;
     gap: 32px;
     &__image {
       grid-column: 1 / 2;

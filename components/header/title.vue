@@ -18,7 +18,8 @@
   &__link {
     text-decoration: none;
     &--image {
-      height: 48px;
+      width: 216px;
+      height: auto;
     }
   }
   &:hover {

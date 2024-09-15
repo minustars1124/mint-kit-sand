@@ -36,7 +36,7 @@ useHead({
     background-color: var(--primary-color);
   }
   &__main {
-    width: 1024px;
+    max-width: 960px;
     margin: 80px auto 0;
   }
   &__footer {

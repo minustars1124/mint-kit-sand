@@ -217,7 +217,7 @@ const closeMenu = () => {
   &__menu {
     display: flex;
     justify-content: center;
-    gap: 64px;
+    gap: 16px;
   }
   &__ul {
     display: flex;
@@ -227,7 +227,8 @@ const closeMenu = () => {
     padding-inline-start: 0;
   }
   &__li {
-    width: 128px;
+    width: 10svw;
+    max-width: 128px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -246,16 +247,19 @@ const closeMenu = () => {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 959px) {
   .navigation {
     &__hamburger {
       display: block;
+      cursor: pointer;
+      &:hover {
+        opacity: .6;
+      }
     }
     &__menu {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      gap: 16px;
       position: fixed;
       top: 0;
       left: -100%;
@@ -273,6 +277,10 @@ const closeMenu = () => {
     }
     &__ul {
       flex-direction: column;
+    }
+    &__li {
+      width: 128px;
+      max-width: none;
     }
   }
 }

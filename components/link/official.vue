@@ -36,12 +36,12 @@ const linkToYouTube = () => {
         border: none;
         cursor: pointer;
         &--icon {
-            width: 18px;
+            max-width: 18px;
             height: auto; 
         }
         &--youtube {
-            width: auto;
-            height: 18px;
+            max-width: 80px;
+            height: auto;
         }
         &:hover {
             opacity: .6;

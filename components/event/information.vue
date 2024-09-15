@@ -111,7 +111,8 @@ const sameDayPrice = computed(() => {
   justify-content: start;
   align-items: center;
   grid-template-columns: 50% auto;
-  width: 50vw;
+  width: 70svw;
+  min-width: 460px;
   padding: 8px;
   box-sizing: border-box;
   gap: 32px;
