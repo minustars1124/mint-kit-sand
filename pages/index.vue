@@ -32,12 +32,6 @@ const newsList = NewsList.items;
            alt="Mint kit sandメンバー横並び"
            type="img/webp"/>
       </picture>
-      <div class="index__picture--band">
-        <img loading="lazy"
-           srcset="../assets/images/logo/mks.webp"
-           alt="Mint kit sandロゴマーク"
-           type="img/webp" class="index__picture--logo"/>
-      </div>
     </div>
     <div class="index__news">
       <div class="index__news--title">NEWS</div>
@@ -55,24 +49,6 @@ const newsList = NewsList.items;
 
 <style scoped lang="scss">
 .index {
-  &__picture {
-    position: relative;
-    &--band {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 30%;
-      line-height: 30%;
-      background-color: var(--white);
-      opacity: .8;
-      position: absolute;
-      top: 50%;
-    }
-    &--logo {
-      height: 100%;
-    }
-  }
   &__news {
     &--title {
       padding: 0 16px;
@@ -92,14 +68,6 @@ const newsList = NewsList.items;
 
 @media screen and (max-width: 480px) {
   .index {
-    &__picture {
-      &--band {
-        display: none;
-      }
-      &--logo {
-        display: none;
-      }
-    }
     &__news {
       &--title {
         text-align: center;
