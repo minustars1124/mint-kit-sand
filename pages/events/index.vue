@@ -82,26 +82,26 @@ const eventList: Array<Event> = [
 </script>
 
 <template>
-    <div class="events-index">
-        <section class="events-index__introduction">
-            <h1 class="events-index__introduction--title">Events</h1>
-        </section>
-        <section class="events-index__list">
-          <template v-for="disc in eventList">
-            <EventInformation :type="disc.type"
-                              :date="disc.date"
-                              :name="disc.name"
-                              :place="disc.place"
-                              :boothNumber="disc.boothNumber"
-                              :openTime="disc.openTime"
-                              :startTime="disc.startTime"
-                              :performers="disc.performers"
-                              :advancePrice="disc.advancePrice"
-                              :sameDayPrice="disc.sameDayPrice"
-                              :link="disc.link"/>
-          </template>
-        </section>
-    </div>
+  <div class="events-index">
+    <section class="events-index__introduction">
+      <h1 class="events-index__introduction--title">Events</h1>
+    </section>
+    <section class="events-index__list">
+      <template v-for="disc in eventList">
+        <EventInformation :type="disc.type"
+                          :date="disc.date"
+                          :name="disc.name"
+                          :place="disc.place"
+                          :boothNumber="disc.boothNumber"
+                          :openTime="disc.openTime"
+                          :startTime="disc.startTime"
+                          :performers="disc.performers"
+                          :advancePrice="disc.advancePrice"
+                          :sameDayPrice="disc.sameDayPrice"
+                          :link="disc.link"/>
+      </template>
+    </section>
+  </div>
 </template>
 
 <style scoped lang="scss">

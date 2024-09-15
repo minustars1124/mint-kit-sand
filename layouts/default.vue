@@ -44,10 +44,10 @@ useHead({
 @media screen and (max-width: 480px) {
   .layouts-default {
     &__header {
-        justify-content: center;
+      justify-content: center;
     }
     &__main {
-        width: 100%;
+      width: 100%;
     }
   }
 }

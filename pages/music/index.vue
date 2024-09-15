@@ -46,20 +46,20 @@ useHead({
     width: 100%;
   }
   &__subject {
-        font-size: 10px;
-        color: #cccccc;
-        line-break: anywhere;
-        word-break: normal;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
-        font-weight: 100;
-        &--link {
-            color: #cccccc;
-            text-decoration: none;
-        }
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+    &--link {
+      color: #cccccc;
+      text-decoration: none;
     }
+  }
 }
 
 @media screen and (max-width: 480px) {

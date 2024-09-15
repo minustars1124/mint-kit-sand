@@ -110,136 +110,136 @@ const closeMenu = () => {
 </script>
 
 <template>
-    <button id="js-hamburger"
-            type="button"
-            class="hamburger"
-            aria-controls="navigation"
-            aria-expanded="false"
-            aria-label="メニューを開く">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__text"></span>
-    </button>
-    <nav class="navigation">
-        <ul class="navigation__ul">
-            <li class="navigation__li">
-                <NuxtLink to="/about" event="" @click.native="closeMenu" class="navigation__link">About</NuxtLink>
-            </li>
-            <li class="navigation__li">
-                <NuxtLink to="/disc" event="" @click.native="closeMenu" class="navigation__link">Discography</NuxtLink>
-            </li>
-            <li class="navigation__li">
-                <NuxtLink to="/music" event="" @click.native="closeMenu" class="navigation__link">Music</NuxtLink>
-            </li>
-            <li class="navigation__li">
-                <NuxtLink to="/events" event="" @click.native="closeMenu" class="navigation__link">Events</NuxtLink>
-            </li>
-            <li class="navigation__li">
-                <NuxtLink to="/contact" event="" @click.native="closeMenu" class="navigation__link">Contact</NuxtLink>
-            </li>
-        </ul>
-        <LinkOfficial/>
-    </nav>
+  <button id="js-hamburger"
+          type="button"
+          class="hamburger"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="メニューを開く">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__text"></span>
+  </button>
+  <nav class="navigation">
+    <ul class="navigation__ul">
+      <li class="navigation__li">
+        <NuxtLink to="/about" event="" @click.native="closeMenu" class="navigation__link">About</NuxtLink>
+      </li>
+      <li class="navigation__li">
+        <NuxtLink to="/disc" event="" @click.native="closeMenu" class="navigation__link">Discography</NuxtLink>
+      </li>
+      <li class="navigation__li">
+        <NuxtLink to="/music" event="" @click.native="closeMenu" class="navigation__link">Music</NuxtLink>
+      </li>
+      <li class="navigation__li">
+        <NuxtLink to="/events" event="" @click.native="closeMenu" class="navigation__link">Events</NuxtLink>
+      </li>
+      <li class="navigation__li">
+        <NuxtLink to="/contact" event="" @click.native="closeMenu" class="navigation__link">Contact</NuxtLink>
+      </li>
+    </ul>
+    <LinkOfficial/>
+  </nav>
 </template>
 
 <style scoped lang="scss">
 .hamburger {
-    display: none;
-    height: 60px;
-    margin-left: auto;
-    position: relative;
-    z-index: 10;
-    width: 60px;
-    border: none;
-    background-color: transparent;
-    &__line {
-        display: block;
-        height: 1px;
-        position: absolute;
-        top: 23px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 24px;
-        background-color: var(--white);
-        transition: 0.4s;
-        &:before, &:after {
-            content: "";
-            display: block;
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            background-color: var(--white);
-            transition: inherit;
-        }
-        &:before {
-            top: -6px;
-        }
-        &:after {
-            top: 6px;
-        }
+  display: none;
+  height: 60px;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+  width: 60px;
+  border: none;
+  background-color: transparent;
+  &__line {
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    background-color: var(--white);
+    transition: 0.4s;
+    &:before, &:after {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      background-color: var(--white);
+      transition: inherit;
     }
-    &__text {
-        position: absolute;
-        bottom: 8px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
+    &:before {
+      top: -6px;
+    }
+    &:after {
+      top: 6px;
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    &::before {
+      content: "メニュー";
+      text-align: center;
+      color: var(--white);
+      font-size: 0.6em;
+    }
+  }
+  &.active {
+    .hamburger {
+      &__line {
+        background-color: transparent;
         &::before {
-            content: "メニュー";
-            text-align: center;
-            color: var(--white);
-            font-size: 0.6em;
+          top: 0;
+          transform: rotate(45deg);
         }
-    }
-    &.active {
-        .hamburger {
-            &__line {
-                background-color: transparent;
-                &::before {
-                    top: 0;
-                    transform: rotate(45deg);
-                }
-                &::after {
-                    top: 0;
-                    transform: rotate(-45deg);
-                }
-            }
-            &__text {
-                &::before {
-                    content: '閉じる';
-                }
-            }
+        &::after {
+          top: 0;
+          transform: rotate(-45deg);
         }
+      }
+      &__text {
+        &::before {
+          content: '閉じる';
+        }
+      }
     }
+  }
 }
 .navigation {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  &__ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline-start: 0;
+  }
+  &__li {
+    width: 128px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__link {
     display: flex;
     justify-content: center;
-    gap: 64px;
-    &__ul {
-        display: flex;
-        gap: 16px;
-        list-style-type: none;
-        margin-block: 0;
-        padding-inline-start: 0;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+    &:hover {
+      background-color: var(--white);
+      color: var(--primary-color);
+      transition: .2s;
     }
-    &__li {
-        width: 128px;
-        font-size: 16px;
-        text-align: center;
-        cursor: pointer;
-    }
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--white);
-        text-decoration: none;
-        &:hover {
-          background-color: var(--white);
-          color: var(--primary-color);
-          transition: .2s;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 480px) {
