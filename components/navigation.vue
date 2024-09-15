@@ -144,21 +144,21 @@ const closeMenu = () => {
 <style scoped lang="scss">
 .hamburger {
   display: none;
-  height: 60px;
+  height: 48px;
   margin-left: auto;
   position: relative;
   z-index: 10;
-  width: 60px;
+  width: 48px;
   border: none;
   background-color: transparent;
   &__line {
     display: block;
     height: 1px;
     position: absolute;
-    top: 23px;
+    top: 19px;
     left: 50%;
     transform: translateX(-50%);
-    width: 24px;
+    width: 20px;
     background-color: var(--white);
     transition: 0.4s;
     &:before, &:after {
@@ -179,7 +179,7 @@ const closeMenu = () => {
   }
   &__text {
     position: absolute;
-    bottom: 8px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
