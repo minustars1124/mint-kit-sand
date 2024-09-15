@@ -4,6 +4,14 @@ useHead({
     {
       name: 'description',
       content: '新宿発渋谷系アイドルポップロックシューゲイザーバンドMint kit sand（ミント・キット・サンド）の公式ウェブサイトです。バンド活動の最新情報を発信しています。'
+    },
+    {
+      name: 'keyword',
+      content: '渋谷系,アイドル,ロック,シューゲイザー'
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width,initial-scale=1.0'
     }
   ]
 });
