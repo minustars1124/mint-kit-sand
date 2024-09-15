@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import images from '@/lib/images';
 import DiscList from '@/assets/json/discs.json';
 const disc = ref<Disc>();
 const src = ref<string>();
@@ -42,7 +43,7 @@ onMounted(() => {
     navigateTo('/disc');
   }
   disc.value = discList.find(disc => route.params.id === disc.id);
-  src.value = "@/assets/images/disc/" + disc.value?.id + ".webp"
+  src.value =  images[disc.value.id];
   alt.value = disc.value?.title + "ジャケット";
 });
 </script>

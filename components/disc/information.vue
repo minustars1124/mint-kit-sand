@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import images from '@/lib/images';
 const props = defineProps({
   id: {
     type: String,
@@ -25,8 +26,8 @@ const props = defineProps({
     required: true,
   }
 })
-const src = computed<string>(() => {
-  return "@/assets/images/disc/" + props.id + ".webp"
+const src = computed<string | undefined>(() => {
+  return images[props.id];
 })
 const alt = computed<string>(() => {
   return props.title + "ジャケット";
