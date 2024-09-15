@@ -24,6 +24,11 @@ useHead({
 <style scoped lang="scss">
 .layouts-default {
   &__header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100svw;
     display: flex;
     padding: 16px 32px;
     justify-content: space-between;
@@ -32,7 +37,7 @@ useHead({
   }
   &__main {
     width: 1024px;
-    margin: 0 auto;
+    margin: 80px auto 0;
   }
   &__footer {
     padding: 8px 0;
