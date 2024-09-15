@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import EventList from '@/assets/json/events.json';
 useHead({
   title: 'Event'
 })
@@ -33,52 +34,7 @@ interface Event {
   link?: string,
   reservation?: string,
 }
-const eventList: Array<Event> = [
-  {
-    type: 'live',
-    date: '2024/10/05（土）',
-    name: 'Guitar Pop Restaurant vol.51',
-    place: '京王堀之内time Tokyo',
-    openTime: '12:20',
-    startTime: '12:45',
-    performers: ['three-weeks-old lovesick puppy', 'humming parlour', 'ポプリ', '杉本清隆'],
-    advancePrice: 2800,
-    sameDayPrice: 3300,
-    link: 'https://gprofficial.net/live51',
-  },
-  {
-    type: 'live',
-    date: '2024/08/04（日）',
-    name: 'Mint flavor meeting vol.1',
-    place: '代々木Barbara',
-    openTime: '17:40',
-    startTime: '18:00',
-    performers: ['薄塩指数', 'ライナスの青い毛布'],
-    advancePrice: 2500,
-    sameDayPrice: 2500,
-    link: '',
-  },
-  {
-    type: 'live',
-    date: '2024/05/26（日）',
-    name: 'Metcha Pop Chotto Rock',
-    place: '下北沢Waver',
-    openTime: '11:20',
-    startTime: '11:50',
-    performers: ['Capitan', 'fedress', 'abenie'],
-    advancePrice: 2500,
-    sameDayPrice: 2500,
-    link: '',
-  },
-  {
-    type: 'distribution',
-    date: '2024/04/28（日）',
-    name: 'M3春 2024',
-    place: '東京流通センター',
-    boothNumber: '第一展示場P-09a',
-    link: '',
-  },
-]
+const eventList: Array<Event> = EventList.items;
 </script>
 
 <template>
