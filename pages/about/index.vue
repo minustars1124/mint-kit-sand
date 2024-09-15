@@ -8,7 +8,7 @@ useHead({
   <div class="about-index">
     <section class="about-index__introduction">
       <h1 class="about-index__introduction--title">About Mint kit sand</h1>
-      <h2 class="about-index__introduction--name">Mint kit sand（ミント・キット・サンド）</h2>
+      <h2 class="about-index__introduction--name"><ruby>Mint kit sand<rt>ミント・キット・サンド</rt></ruby></h2>
       <div>東京都内やインターネット上で活動する新宿発渋谷系アイドルポップロックシューゲイザーバンド</div>
       <div>爽やかな甘さをあなたに。</div>
     </section>
@@ -22,7 +22,9 @@ useHead({
       <h3 class="about-index__member--title">Member of Mint kit sand（左から）</h3>
       <ul class="about-index__member--ul">
         <li class="about-index__list">
-          須藤ストラ（ギター）
+          <div>
+            <ruby>須<rt>ス</rt>藤<rt>ドウ</rt></ruby>ストラ（ギター）
+          </div>
           <LinkX name="sudostrat"/>
           <LinkNiconico id="25513944"/>
         </li>
@@ -41,7 +43,9 @@ useHead({
           <LinkNiconico id="6279575"/>
         </li>
         <li class="about-index__list">
-          八河のなめ（ドラム）
+          <div>
+            <ruby>八<rt>ハチ</rt>河<rt>カワ</rt></ruby>のなめ（ドラム）
+          </div>
           <LinkX name="NO_NAME_POEM"/>
           <LinkNiconico id="57045858"/>
         </li>
@@ -93,7 +97,7 @@ useHead({
   &__list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 4px;
   }
 }
