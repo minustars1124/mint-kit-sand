@@ -181,6 +181,7 @@ const sameDayPrice = computed(() => {
   .events-information {
   gap: 16px;
   width: 90svw;
+  min-width: initial;
   grid-template-columns: auto;
   &__info {
     grid-column: 1;

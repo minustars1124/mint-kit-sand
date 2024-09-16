@@ -156,6 +156,7 @@ const link = () => {
 @media screen and (max-width: 480px) {
   .disc-information {
     width: 90svw;
+    min-width: initial;
     gap: 16px;
     &__info {
       &--tracks {

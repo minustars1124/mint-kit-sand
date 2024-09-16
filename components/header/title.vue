@@ -32,7 +32,7 @@
   .header-title {
     &__link {
       &--image {
-        height: 36px;
+        width: 160px;
       }
     }
   }
