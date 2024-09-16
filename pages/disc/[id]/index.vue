@@ -233,6 +233,7 @@ onMounted(() => {
     &__detail {
       grid-template-columns: auto;
       width: 90svw;
+      min-width: initial;
       gap: 16px;
       &__info {
         grid-column: 1;
