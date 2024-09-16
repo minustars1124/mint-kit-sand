@@ -71,7 +71,7 @@ onMounted(() => {
   if (!idList.some(id => route.params.id)) {
     navigateTo('/disc');
   }
-  disc.value = discList.find(disc => route.params.id === disc.id);
+  disc.value = discList.find(disc => route.params.id === disc.id)!;
   src.value =  images[disc.value.id];
   alt.value = disc.value?.title + "ジャケット";
 });
