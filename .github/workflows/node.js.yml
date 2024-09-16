@@ -40,4 +40,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
         local-dir: ./dist/ # どのディレクトリのデータをアップロードするか
-        remote-dir: mks/dist/      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
+        server-dir: mks/dist/      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
