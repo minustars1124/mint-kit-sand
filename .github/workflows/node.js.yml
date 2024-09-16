@@ -29,6 +29,7 @@ jobs:
     - name: npm run generate
       run: npm run generate
 
+    - run: pwd
     - name: List output files
       run: ls
 
