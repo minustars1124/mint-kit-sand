@@ -1,7 +1,36 @@
 <script setup lang="ts">
 useHead({
-  title: 'About'
-})
+  title: 'About',
+  meta: [
+    {
+      name: 'title',
+      content: 'Mint kit sand Official Website'
+    },
+    {
+      name: 'keyword',
+      content: '渋谷系,アイドル,ポップス,ロック,シューゲイザー'
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width,initial-scale=1.0'
+    }
+  ]
+});
+useSeoMeta({
+  title: 'Mint kit sand Official Website',
+  description: '新宿発渋谷系アイドルポップロックシューゲイザーバンドMint kit sand（ミント・キット・サンド）の公式ウェブサイトです。バンド活動の最新情報を発信しています。',
+  ogSiteName: 'Mint kit sand Official Website',
+  ogUrl: 'https://mintkitsand.com/',
+  ogType: 'article',
+  ogTitle: 'Mint kit sandとは',
+  ogDescription: '新宿発渋谷系アイドルポップロックシューゲイザーバンドMint kit sand（ミント・キット・サンド）の公式ウェブサイトです。バンド活動の最新情報を発信しています。',
+  ogImage: 'https://mintkitsand.com/static/images/logo.png',
+  twitterCard: 'summary_large_image',
+  twitterImage: 'https://mintkitsand.com/static/images/logo.png',
+  twitterSite: '@Mintkitsand',
+  twitterTitle: 'Mint kit sandとは',
+  twitterDescription: '新宿発渋谷系アイドルポップロックシューゲイザーバンドMint kit sand（ミント・キット・サンド）の公式ウェブサイトです。バンド活動の最新情報を発信しています。',
+});
 </script>
 
 <template>
