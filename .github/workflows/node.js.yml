@@ -1,0 +1,43 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: npm install # パッケージをインストール
+      run: npm install
+    - name: npm run generate
+      run: npm run generate
+
+    - run: pwd
+    - name: List output files
+      run: ls
+
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5   # FTPを使ってサーバーにDeployするアクションを実行
+      with:                                        
+        server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
+        username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
+        password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
+        local-dir: ./dist/ # どのディレクトリのデータをアップロードするか
+        server-dir: mks/dist/      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
