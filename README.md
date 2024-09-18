@@ -11,9 +11,9 @@
 * 使ってみたかったから
   * Vue3 を普段利用しているが、import の指定が不要だったり、router の指定が不要だったり楽が出来る
   * 開発環境での起動は Vue3 + Vite の方が早かったが、これくらいなら待てる
+  * SSG（= Static Site Generation/静的生成機能）があり、SPA では弱かった SEO 対策ができる
 
 ## 情報を更新するには
-
 assets/json 以下にあるファイルの上に json 形式でデータを追加する
 
 * discs.json
@@ -25,10 +25,9 @@ assets/json 以下にあるファイルの上に json 形式でデータを追�
   * ある程度の情報が溜まったら古いものを削除する
 
 ## 今後やりたいこと
-* デフォルトブランチを更新したら、自動でビルドしてロリポップにアップロードしてくれる
-  * Github Actions というのを利用すれば出来るらしいのですが一旦作るので力尽きました……
 * イベント情報の充実
-  * フライヤーとか乗せたい
+  * 過去に参加したイベントとかフライヤーとか乗せたい
+  * 場所の公式サイトやアクセス情報
 * 特設サイトを作る
   * ロリポップではサブドメインを作れるらしいので、リリースとかイベントとかのサイトを組めばサブドメインで見れるようにできます
 
@@ -40,6 +39,13 @@ assets/json 以下にあるファイルの上に json 形式でデータを追�
 * metaタグ
   * https://digitalidentity.co.jp/blog/seo/ogp-share-setting.html
   * https://nuxt.com/docs/getting-started/seo-meta
+* デフォルトブランチ更新をキックに GitHub Actions から静的ファイル生成とロリポップ FTP へアップロード
+  * https://qiita.com/harachan/items/08a92feb2dea921f99b2
+  * https://github.com/SamKirkland/FTP-Deploy-Action
+    * 上の記事は古かったことから参照しているライブラリのバージョンを最新に設定
+* 動的ルーティングの静的ファイル生成
+  * https://zenn.dev/kon_karin/articles/0e514dea329044
+
 
 ## 準備
 
@@ -60,13 +66,18 @@ npm run dev
 ```
 
 ## 本番リリース
+デフォルトブランチに更新がマージされると、 `.github/workflow/node.js.yml` の設定より以下の処理を実行します。
 
-本番リリース用のファイルをビルドします。
-dist 以下にあるファイルすべてをロリポップFTP から mks/dist 以下に全てアップロードします。
+* パッケージのインストール
+* 静的ファイルの生成
+* FTP を利用してロリポップのレンタルサーバにデプロイ
+
+## 本番リリースで生成されるファイルの確認
+
+本番リリース用に静的ファイルを生成しビルドします。
 
 ```bash
 # npm
-npm run build
 npm run generate
 ```
 
