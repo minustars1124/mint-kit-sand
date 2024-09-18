@@ -61,8 +61,8 @@ interface Disc {
 }
 const route = useRoute();
 const discList: Array<Disc> = DiscList.items;
-  const click = (url: string) => {
-    window.open(url, '_blank');
+const click = (url: string) => {
+  window.open(url, '_blank');
 }
 const router = useRouter();
 
