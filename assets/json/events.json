@@ -2,6 +2,30 @@
   "items": [
     {
       "type": "live",
+      "date": "2025/02/01（土）",
+      "name": "POP BEAT JEWERY BOX",
+      "place": "下北沢シェルター",
+      "openTime": "10:30",
+      "startTime": "10:45",
+      "performers": ["fedress", "マゼランソーシャルバケーション", "SEESOOANY", "かききまなみ", "Reveanity", "レネット"],
+      "advancePrice": 3500,
+      "sameDayPrice": 4000,
+      "link": "https://t.livepocket.jp/e/rpo9s"
+    },
+    {
+      "type": "live",
+      "date": "2024/12/08（日）",
+      "name": "ゆかぱん糾弾カーニバル '24",
+      "place": "町田Nutty's",
+      "openTime": "13:00",
+      "startTime": "13:30",
+      "performers": ["Gollila Kneels Down the Ground", "アンチモンズ", "1027Whiteout"],
+      "advancePrice": 2000,
+      "sameDayPrice": 2000,
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfiuaiiqk4H8VbNfA-4WcOI2mOhdTe87wTTfWpoLIoRHZFALg/viewform"
+    },
+    {
+      "type": "live",
       "date": "2024/10/05（土）",
       "name": "Guitar Pop Restaurant vol.51",
       "place": "京王堀之内time Tokyo",
