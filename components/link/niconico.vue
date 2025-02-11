@@ -13,6 +13,10 @@ const click = () => {
 
 <template>
   <button class="link-niconico" @click="click">
+    <img loading="lazy"
+             src="../../assets/images/logo/niconico.png"
+             alt="ニコニコのアイコン"
+             class="link-niconico__icon"/>
     ニコニコ
   </button>
 </template>
@@ -31,6 +35,10 @@ const click = () => {
   color: var(--white);
   font-size: 14px;
   cursor: pointer;
+  &__icon {
+    height: 20px;
+    width: auto;
+  }
   &:hover {
     opacity: .6;
     transition: .2s;
