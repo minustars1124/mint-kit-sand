@@ -38,6 +38,7 @@ useSeoMeta({
     <section class="about-index__introduction">
       <h1 class="about-index__introduction--title">About Mint kit sand</h1>
       <h2 class="about-index__introduction--name"><ruby>Mint kit sand<rt>ミント・キット・サンド</rt></ruby></h2>
+      <div></div>
       <div>東京都内やインターネット上で活動する新宿発渋谷系アイドルポップロックシューゲイザーバンド</div>
       <div>爽やかな甘さをあなたに。</div>
     </section>
@@ -76,6 +77,7 @@ useSeoMeta({
             <ruby>八<rt>ハチ</rt>河<rt>カワ</rt></ruby>のなめ（ドラム）
           </div>
           <LinkX name="NO_NAME_POEM"/>
+          <LinkYoutube id="UCCP604ISRYKJd8l-822WeGA"/>
           <LinkNiconico id="57045858"/>
         </li>
       </ul>
