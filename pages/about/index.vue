@@ -38,7 +38,7 @@ useSeoMeta({
     <section class="about-index__introduction">
       <h1 class="about-index__introduction--title">About Mint kit sand</h1>
       <h2 class="about-index__introduction--name"><ruby>Mint kit sand<rt>ミント・キット・サンド</rt></ruby></h2>
-      <div></div>
+      <div>2017年結成、2018年から音源リリースとライブ活動を開始</div>
       <div>東京都内やインターネット上で活動する新宿発渋谷系アイドルポップロックシューゲイザーバンド</div>
       <div>爽やかな甘さをあなたに。</div>
     </section>
