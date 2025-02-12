@@ -77,7 +77,7 @@ useSeoMeta({
           いのっぴ（ギター）
           <div class="about-index__buttons">
             <LinkX name="inoppippi"/>
-            <LinkYoutube id="inoppi"/>
+            <LinkYoutube id="inoppippi"/>
             <LinkNiconico id="6279575"/>
           </div>
         </li>
