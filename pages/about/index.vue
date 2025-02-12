@@ -70,6 +70,7 @@ useSeoMeta({
         <li class="about-index__list">
           いのっぴ（ギター）
           <LinkX name="inoppippi"/>
+          <LinkYoutube id="inoppi"/>
           <LinkNiconico id="6279575"/>
         </li>
         <li class="about-index__list">
@@ -77,7 +78,7 @@ useSeoMeta({
             <ruby>八<rt>ハチ</rt>河<rt>カワ</rt></ruby>のなめ（ドラム）
           </div>
           <LinkX name="NO_NAME_POEM"/>
-          <LinkYoutube id="UCCP604ISRYKJd8l-822WeGA"/>
+          <LinkYoutube has-channel id="UCCP604ISRYKJd8l-822WeGA"/>
           <LinkNiconico id="57045858"/>
         </li>
       </ul>
