@@ -6,23 +6,23 @@ const props = defineProps({
   }
 });
 const click = () => {
-  const url = 'https://nico.ms/mylist/' + props.id + '/';
+  const url = 'https://youtube.com/channel/' + props.id;
   window.open(url, '_blank');
 };
 </script>
 
 <template>
-  <button class="link-niconico" @click="click">
+  <button class="link-youtube" @click="click">
     <img loading="lazy"
-             src="../../assets/images/logo/niconico.png"
-             alt="ニコニコのアイコン"
-             class="link-niconico__icon"/>
-    ニコニコ
+             src="../../assets/images/logo/yt_icon.png"
+             alt="YouTubeのアイコン"
+             class="link-youtube__icon"/>
+    YouTube
   </button>
 </template>
 
 <style scoped lang="scss">
-.link-niconico {
+.link-youtube {
   display: flex;
   justify-content: center;
   align-items: center;

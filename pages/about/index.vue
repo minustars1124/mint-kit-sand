@@ -38,8 +38,9 @@ useSeoMeta({
     <section class="about-index__introduction">
       <h1 class="about-index__introduction--title">About Mint kit sand</h1>
       <h2 class="about-index__introduction--name"><ruby>Mint kit sand<rt>ミント・キット・サンド</rt></ruby></h2>
-      <div>東京都内やインターネット上で活動する新宿発渋谷系アイドルポップロックシューゲイザーバンド</div>
-      <div>爽やかな甘さをあなたに。</div>
+      <div>2017年に須藤ストラが音楽活動をしていた友人たちに声をかけて結成</div>
+      <div>2018年から音源制作、東京都内を中心にライブ活動を開始</div>
+      <div>各々のやりたいことから、「新宿発渋谷系アイドルポップロックシューゲイザーバンド」をテーマに、明るく、だけど無理せず楽しく活動中</div>
     </section>
     <picture>
         <img loading="lazy"
@@ -76,6 +77,7 @@ useSeoMeta({
             <ruby>八<rt>ハチ</rt>河<rt>カワ</rt></ruby>のなめ（ドラム）
           </div>
           <LinkX name="NO_NAME_POEM"/>
+          <LinkYoutube id="UCCP604ISRYKJd8l-822WeGA"/>
           <LinkNiconico id="57045858"/>
         </li>
       </ul>
