@@ -10,7 +10,7 @@ const props = defineProps({
   },
 });
 const click = () => {
-  const path = props.hasChannel ? 'https://youtube.com/channel' : 'https://youtube.com/@' 
+  const path = props.hasChannel ? 'https://youtube.com/channel/' : 'https://youtube.com/@' 
   const url = path + props.id;
   window.open(url, '_blank');
 };
