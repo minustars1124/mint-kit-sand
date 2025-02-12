@@ -55,31 +55,41 @@ useSeoMeta({
           <div>
             <ruby>須<rt>ス</rt>藤<rt>ドウ</rt></ruby>ストラ（ギター）
           </div>
-          <LinkX name="sudostrat"/>
-          <LinkNiconico id="25513944"/>
+          <div class="about-index__buttons">
+            <LinkX name="sudostrat"/>
+            <LinkNiconico id="25513944"/>
+          </div>
         </li>
         <li class="about-index__list">
           スーパーマエハマ（ベース）
-          <LinkX name="MhamYsk"/>
+          <div class="about-index__buttons">
+            <LinkX name="MhamYsk"/>
+          </div>
         </li>
         <li class="about-index__list">
           すのほわ（ボーカル）
-          <LinkX name="sn_white51"/>
-          <LinkNiconico id="14921289"/>
+          <div class="about-index__buttons">
+            <LinkX name="sn_white51"/>
+            <LinkNiconico id="14921289"/>
+          </div>
         </li>
         <li class="about-index__list">
           いのっぴ（ギター）
-          <LinkX name="inoppippi"/>
-          <LinkYoutube id="inoppi"/>
-          <LinkNiconico id="6279575"/>
+          <div class="about-index__buttons">
+            <LinkX name="inoppippi"/>
+            <LinkYoutube id="inoppi"/>
+            <LinkNiconico id="6279575"/>
+          </div>
         </li>
         <li class="about-index__list">
           <div>
             <ruby>八<rt>ハチ</rt>河<rt>カワ</rt></ruby>のなめ（ドラム）
           </div>
-          <LinkX name="NO_NAME_POEM"/>
-          <LinkYoutube has-channel id="UCCP604ISRYKJd8l-822WeGA"/>
-          <LinkNiconico id="57045858"/>
+          <div class="about-index__buttons">
+            <LinkX name="NO_NAME_POEM"/>
+            <LinkYoutube has-channel id="UCCP604ISRYKJd8l-822WeGA"/>
+            <LinkNiconico id="57045858"/>
+          </div>
         </li>
       </ul>
     </section>
@@ -132,6 +142,11 @@ useSeoMeta({
     align-items: flex-end;
     gap: 4px;
   }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -144,6 +159,10 @@ useSeoMeta({
       &--name {
         font-size: 1.2em;
       }
+    }
+    &__list {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
