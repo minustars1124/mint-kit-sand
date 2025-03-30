@@ -2,6 +2,18 @@
   "items": [
     {
       "type": "live",
+      "date": "2025/05/31（土）",
+      "name": "Boys from OUTBURN vol.2",
+      "place": "下北沢LIVEHAUS",
+      "openTime": "18:30",
+      "startTime": "19:00",
+      "performers": ["FUZZZKLAXON", "パープルスケルトンズ", "littlegirlhiace", "1027Whiteout"],
+      "advancePrice": 2500,
+      "sameDayPrice": 2500,
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdFz6CIACNihLaVv3GFw4-R5rQLWMjw-emCjlGvD8Fe8ZEDSw/viewform?pli=1"
+    },
+    {
+      "type": "live",
       "date": "2025/02/01（土）",
       "name": "POP BEAT JEWERY BOX",
       "place": "下北沢シェルター",
