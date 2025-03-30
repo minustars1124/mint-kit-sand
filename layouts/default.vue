@@ -16,7 +16,7 @@ useHead({
       <slot></slot>
     </main>
     <footer class="layouts-default__footer">
-      (c)2018-2024 Mint kit sand all rights reserved.
+      (c)2018-2025 Mint kit sand all rights reserved.
     </footer>
   </div>
 </template>
