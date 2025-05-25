@@ -44,6 +44,7 @@ interface Staff {
   illust?: Person,
   photo?: Person,
   design: Person,
+  mastering?: Person,
 }
 interface Shop {
   name: string,
@@ -57,7 +58,8 @@ interface Disc {
   price: number,
   staff: Staff,
   detail: string,
-  shops: Array<Shop>
+  shops?: Array<Shop>,
+  subScription?: string
 }
 const route = useRoute();
 const discList: Array<Disc> = DiscList.items;
@@ -102,7 +104,7 @@ onMounted(() => {
             </template>
           </ol>
         </div>
-        <div class="disc-id-index__detail__info--price">頒布価格:¥{{ disc.price }}</div>
+        <div v-if="disc.price > 0" class="disc-id-index__detail__info--price">頒布価格:¥{{ disc.price }}</div>
         <div class="disc-id-index__detail__info--staff">
           <div v-if="disc.staff.illust" class="disc-id-index__detail__person">
             イラスト:{{ disc.staff.illust.name }}
@@ -123,7 +125,15 @@ onMounted(() => {
           <div class="disc-id-index__detail__person">
             ジャケット・デザイン:{{ disc.staff.design.name }}
           </div>
-          <div class="disc-id-index__shopping">
+          <div v-if="disc.staff.mastering" class="disc-information__person">
+            ミックス・マスタリング:{{ disc.staff.mastering.name }}
+            <button v-if="disc.staff.mastering.link"
+                    @click="click(disc.staff.mastering.link)"
+                    class="disc-id-index__detail__person--button">
+              リンク
+            </button>
+          </div>
+          <div v-if="disc.shops" class="disc-id-index__shopping">
             通販:
             <div v-for="shop in disc.shops">
               <button @click="click(shop.link)"
@@ -131,6 +141,12 @@ onMounted(() => {
                 {{ shop.name }}
               </button>
             </div>
+          </div>
+          <div v-if="disc.subScription" class="disc-id-index__sub-scription">
+            <button @click="click(disc.subScription)"
+                      class="disc-id-index__detail__person--button">
+                各種サブスクリプションサービス
+              </button>
           </div>
         </div>
       </div>
