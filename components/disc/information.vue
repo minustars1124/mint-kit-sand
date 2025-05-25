@@ -62,7 +62,7 @@ const link = () => {
           </template>
         </ol>
       </div>
-      <div class="disc-information__info--price">頒布価格:¥{{ props.price }}</div>
+      <div v-if="props.price > 0" class="disc-information__info--price">頒布価格:¥{{ props.price }}</div>
       <div class="disc-information__info--staff">
         <div v-if="props.staff.illust" class="disc-information__person">
           イラスト:{{ props.staff.illust.name }}
@@ -82,6 +82,14 @@ const link = () => {
         </div>
         <div class="disc-information__person">
           ジャケット・デザイン:{{ props.staff.design.name }}
+        </div>
+        <div v-if="props.staff.mastering" class="disc-information__person">
+          ミックス・マスタリング:{{ props.staff.mastering.name }}
+          <button v-if="props.staff.mastering.link"
+                  @click="click(props.staff.mastering.link)"
+                  class="disc-information__person--button">
+            リンク
+          </button>
         </div>
       </div>
       <button @click="link" class="disc-information__info--button">
