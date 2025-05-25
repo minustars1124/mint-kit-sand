@@ -1,6 +1,30 @@
 {
   "items": [
     {
+      "id": "kmd",
+      "release": "1st Digital Release",
+      "title": "Kiss Me! Darling",
+      "tracks": [
+        "Kiss Me! Darling"
+      ],
+      "price": 0,
+      "staff": {
+        "photo": {
+          "name": "市倉ミズキ"
+        },
+        "design": {
+          "name": "ぴぃ",
+          "link": "https://x.com/p_soge"
+        },
+        "mastering": {
+          "name": "さかな",
+          "link": "https://x.com/sakana_tohno"
+        }
+      },
+      "detail": "2025/04/30より、各種音楽サブスクリプションサービスにて配信開始",
+      "subScription": "https://big-up.style/IBvGPuOybQ"
+    },
+    {
       "id": "magic",
       "release": "4th single",
       "title": "はじまりの魔法",
