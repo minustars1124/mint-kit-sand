@@ -43,7 +43,7 @@ const newsList = NewsList.items;
     <div class="index__picture">
       <picture>
         <img loading="lazy"
-           srcset="../assets/images/mks_bgr.webp"
+           srcset="../assets/images/mks_bgr2.webp"
            alt="Mint kit sandメンバー横並び"
            type="img/webp"/>
       </picture>

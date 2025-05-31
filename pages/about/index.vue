@@ -44,7 +44,7 @@ useSeoMeta({
     </section>
     <picture>
         <img loading="lazy"
-             srcset="../../assets/images/mks_bgr.webp"
+             srcset="../../assets/images/mks_bgr3.webp"
              alt="Mint kit sandメンバー横並び"
              type="img/webp"/>
     </picture>
@@ -52,18 +52,18 @@ useSeoMeta({
       <h3 class="about-index__member--title">Member of Mint kit sand（左から）</h3>
       <ul class="about-index__member--ul">
         <li class="about-index__list">
+          スーパーマエハマ（ベース）
+          <div class="about-index__buttons">
+            <LinkX name="MhamYsk"/>
+          </div>
+        </li>
+        <li class="about-index__list">
           <div>
             <ruby>須<rt>ス</rt>藤<rt>ドウ</rt></ruby>ストラ（ギター）
           </div>
           <div class="about-index__buttons">
             <LinkX name="sudostrat"/>
             <LinkNiconico id="25513944"/>
-          </div>
-        </li>
-        <li class="about-index__list">
-          スーパーマエハマ（ベース）
-          <div class="about-index__buttons">
-            <LinkX name="MhamYsk"/>
           </div>
         </li>
         <li class="about-index__list">
