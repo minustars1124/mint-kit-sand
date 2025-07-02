@@ -2,6 +2,18 @@
   "items": [
     {
       "type": "live",
+      "date": "2025/09/05（金）",
+      "name": "whirpool vol.1",
+      "place": "柴崎mod",
+      "openTime": "18:45",
+      "startTime": "19:00",
+      "performers": ["山脈地帯", "フクシア", "SUGRAN", "borderline case"],
+      "advancePrice": 2500,
+      "sameDayPrice": 3000,
+      "link": "https://shibasakimod.com/schedule/20250905lt"
+    },
+    {
+      "type": "live",
       "date": "2025/05/31（土）",
       "name": "Boys from OUTBURN vol.2",
       "place": "下北沢LIVEHAUS",
